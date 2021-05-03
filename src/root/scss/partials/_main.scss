@@ -1,20 +1,30 @@
 main {
   width: 100vw;
   height: 100vh;
+  background-color: #363947;
   div {
     &.main_cont {
-      width: 80vw;
-      margin: 0 auto;
-      border: white solid 2px;
+      width: 100%;
+      height: 50%;
       display: flex;
+      justify-content: center;
+      padding-top: 100px;
       div {
         &.back_container {
-          width: 100px;
+          width: 150px;
+          height: 180px;
+          margin-right: 10px;
+          border: lightgrey solid 2px;
+          border-radius: 5px;
+          img {
+            &.image {
+              width: 100%;
+              height: 100%;
 
+            }
+          }
         }
-
       }
     }
   }
-
 }

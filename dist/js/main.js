@@ -1,20 +1,34 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/js/main.js":
-/*!************************!*\
-  !*** ./src/js/main.js ***!
-  \************************/
+/***/ "./src/root/js/main.js":
+/*!*****************************!*\
+  !*** ./src/root/js/main.js ***!
+  \*****************************/
 /***/ (() => {
 
+Vue.config.devtools = true;
+var app = new Vue({
+  el: '#root',
+  data: {
+    disks: []
+  },
+  created: function created() {
+    var _this = this;
 
+    axios.get('http://localhost:8888/php-ajax-dischi/dataAccess.php').then(function (response) {
+      console.log(response.data);
+      _this.disks = response.data;
+    });
+  }
+});
 
 /***/ }),
 
-/***/ "./src/scss/master.scss":
-/*!******************************!*\
-  !*** ./src/scss/master.scss ***!
-  \******************************/
+/***/ "./src/root/scss/master.scss":
+/*!***********************************!*\
+  !*** ./src/root/scss/master.scss ***!
+  \***********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -158,8 +172,8 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["dist/css/master"], () => (__webpack_require__("./src/js/main.js")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["dist/css/master"], () => (__webpack_require__("./src/scss/master.scss")))
+/******/ 	__webpack_require__.O(undefined, ["dist/css/master"], () => (__webpack_require__("./src/root/js/main.js")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["dist/css/master"], () => (__webpack_require__("./src/root/scss/master.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
