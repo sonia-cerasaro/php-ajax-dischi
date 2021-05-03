@@ -27,13 +27,13 @@ error_reporting(E_ALL);
             'title' => 'Steve Gadd band',
             'author' => 'Steve Gadd Band',
             'year' => 2018,
-            'poster' => 'https://m.media-amazon.com/images/I/81UtLzBDoEL._SS500_.jpg'
+            'poster' => 'https://cdn2.jazztimes.com/2018/05/SteveGadd-800x723.jpg'
         ],
         [
             'title' => 'Brave new World',
             'author' => 'Iron Maiden',
             'year' => 2000,
-            'poster' => 'https://i.ebayimg.com/images/g/1GwAAOSwFytaKr7l/s-l300.jpg'
+            'poster' => 'https://images-na.ssl-images-amazon.com/images/I/810nSIQOLiL._SY355_.jpg'
         ],
         [
             'title' => 'One more car, one more rider',
