@@ -1,0 +1,20 @@
+main {
+  width: 100vw;
+  height: 100vh;
+  div {
+    &.main_cont {
+      width: 80vw;
+      margin: 0 auto;
+      border: white solid 2px;
+      display: flex;
+      div {
+        &.back_container {
+          width: 100px;
+
+        }
+
+      }
+    }
+  }
+
+}
